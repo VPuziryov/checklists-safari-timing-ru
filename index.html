@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Загрузка Safari-чеклиста...</title>
+
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){
+      if(f.fbq)return;n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+      };
+      if(!f._fbq)f._fbq=n;
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+      t=b.createElement(e); t.async=!0;
+      t.src=v;
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '675997335920840');
+    fbq('track', 'Checklist_SafariTiming');
+
+    setTimeout(function(){
+      window.location.href = 'safari-timing-RU.pdf';
+    }, 2000);
+  </script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #f0f8ff;
+      color: #222;
+    }
+    .container {
+      background: #fff;
+      display: inline-block;
+      padding: 30px 40px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    a {
+      color: #0077cc;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>📥 Загружаем Safari-чеклист...</h2>
+    <p>Через пару секунд вы будете автоматически перенаправлены на PDF-документ.</p>
+    <p>Если этого не произошло — <a href="safari-timing-RU.pdf" target="_blank">нажмите здесь</a>.</p>
+  </div>
+</body>
+</html>
